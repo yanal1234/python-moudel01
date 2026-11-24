@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Plant:
     name: str
     height: float
@@ -19,11 +20,11 @@ def create_plant(name: str, height: float, age: int) -> Plant:
 if __name__ == "__main__":
     print("=== Plant Factory Output ===")
 
-    rose = create_plant("Rose", 25.0, 30)
-    oak = create_plant("Oak", 200.0, 365)
-    cactus = create_plant("Cactus", 5.0, 90)
-    sunflower = create_plant("Sunflower", 80.0, 45)
-    fern = create_plant("Fern", 15.0, 120)
+    rose: Plant = create_plant("Rose", 25.0, 30)
+    oak: Plant = create_plant("Oak", 200.0, 365)
+    cactus: Plant = create_plant("Cactus", 5.0, 90)
+    sunflower: Plant = create_plant("Sunflower", 80.0, 45)
+    fern: Plant = create_plant("Fern", 15.0, 120)
 
     rose.show()
     oak.show()

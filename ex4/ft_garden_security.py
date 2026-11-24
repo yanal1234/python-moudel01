@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Plant:
     _name: str
     _height: float
@@ -57,7 +58,7 @@ def create_plant(name: str, height: float, age: int) -> Plant:
 if __name__ == "__main__":
     print("=== Garden Security System ===")
 
-    rose = create_plant("Rose", 15.0, 10)
+    rose: Plant = create_plant("Rose", 15.0, 10)
     rose.show()
 
     rose.set_height(25.0)

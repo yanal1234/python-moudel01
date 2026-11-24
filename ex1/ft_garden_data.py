@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Plant:
     name: str
     height: int
@@ -14,9 +15,9 @@ class Plant:
 
 if __name__ == "__main__":
     print("=== Garden Plant Registry ===")
-    rose = Plant("Rose", 25, 30)
-    sunflower = Plant("Sunflower", 80, 45)
-    cactus = Plant("Cactus", 15, 120)
+    rose: Plant = Plant("Rose", 25, 30)
+    sunflower: Plant = Plant("Sunflower", 80, 45)
+    cactus: Plant = Plant("Cactus", 15, 120)
     rose.show()
     sunflower.show()
     cactus.show()

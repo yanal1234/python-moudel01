@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Plant:
     name: str
     height: float
@@ -20,7 +21,7 @@ class Plant:
 
 if __name__ == "__main__":
     print("=== Garden Plant Growth ===")
-    rose = Plant("Rose", 25.0, 30)
+    rose: Plant = Plant("Rose", 25.0, 30)
     rose.show()
     count: int = 1
     while count <= 7:
